@@ -12,11 +12,48 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      loadSidebar: true,
+      subMaxLevel: 3,
       name: '',
-      repo: ''
+      repo: '',
+
+    search : [
+      '/', // => README.md
+      '/#/account', // => /account.md
+      '/#/payment', // => /payment.md
+      '/#/process-observing', // => /process-observing.md
+      '/#/promotion-company', // => /promotion-company.md
+      '/#/settings',  // => /settings.md
+      '/#/token'  // => /token.md
+    ],
+
+    // полные параметры конфигурации
+    search: {
+      maxAge: 86400000, // Срок действия, по умолчанию один день
+      paths: [], // или 'auto'
+      placeholder: 'Введите что начать поиск',
+
+      // Локализация
+      placeholder: {
+        '/': 'Поиск'
+      },
+
+      noData: 'Нет результатов!',
+
+      // Локализация
+      noData: {
+        '/': 'Нет результатов'
+      },
+
+      // Глубина по заголовкам, 1 - 6
+      depth: 2
+    }
+
     }
   </script>
   <!-- Docsify v4 -->
+
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
