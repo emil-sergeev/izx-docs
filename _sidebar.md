@@ -1,0 +1,7 @@
+* [Главная](/)
+* [Аккаунт](account.md)
+* [Токены](token.md)
+* [Рекламная компания](promotion-company.md)
+* [Счёт и оплата](payment.md)
+* [Отслеживание работы](process-observing.md)
+* [Настройки](settings.md)
